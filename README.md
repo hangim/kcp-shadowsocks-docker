@@ -13,7 +13,7 @@ A docker image for shadowsocks server with KCPTUN support
 
 or running as a service
 
-    docker run -d --restart=always -e "SS_PORT=443" -e "SS_PASSWORD=123456" -e "SS_METHOD=chacha20" -e "SS_TIMEOUT=300" -e "KCP_PORT=9443" -e "KCP_MODE=fast" -e "MTU=1400" -e "SNDWND=1024" -e "RCVWND=1024" -p 443:443 -p 443:443/udp -p 9443:9443/udp --name ssserver imhang/kcp-shadowsocks-docker
+    docker run -d --restart=always -e "SS_PORT=443" -e "SS_PASSWORD=123456" -e "SS_METHOD=chacha20" -e "SS_TIMEOUT=600" -e "KCP_PORT=9443" -e "KCP_MODE=fast" -e "MTU=1400" -e "SNDWND=1024" -e "RCVWND=1024" -p 443:443 -p 443:443/udp -p 9443:9443/udp --name ssserver imhang/kcp-shadowsocks-docker
 
 ### Default configuration in environment variables
 
@@ -23,7 +23,7 @@ or running as a service
 
     SS_METHOD   chacha20
 
-    SS_TIMEOUT  300
+    SS_TIMEOUT  600
 
     KCP_PORT    9443
 
