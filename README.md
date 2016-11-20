@@ -1,6 +1,6 @@
 # kcp-shadowsocks-docker
 
-A docker image for shadowsocks server with KCPTUN support
+A docker image for [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) server with [KCPTUN](https://github.com/xtaci/kcptun) support
 
 ### Download from Docker Hub 
 
