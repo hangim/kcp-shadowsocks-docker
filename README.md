@@ -1,6 +1,6 @@
 # kcp-shadowsocks-docker
 
-A docker image for shadowsocks server with KCPTUN support
+A docker image for [shadowsocks-libev](https://github.com/shadowsocks/shadowsocks-libev) server with [KCPTUN](https://github.com/xtaci/kcptun) support
 
 ### Download from Docker Hub 
 
@@ -16,7 +16,7 @@ or running as a service
 
 ### KCP Parameters for client
 
-    --crypt none --mtu 1400 --sndwnd 1024 --rcvwnd 1024 --mode fast --nocomp
+    --crypt none --mode fast --mtu 1400 --sndwnd 1024 --rcvwnd 1024 --parityshard 0 --nocomp
 
 ### Default configuration in environment variables
 
@@ -38,3 +38,6 @@ or running as a service
 
     RCVWND      1024
 
+    DATASHARD   10
+
+    PARITYSHARD 0

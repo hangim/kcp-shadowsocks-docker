@@ -2,7 +2,7 @@
 
 FROM imhang/shadowsocks-docker
 
-ENV KCP_VER 20161105
+ENV KCP_VER 20161111
 
 RUN \
     apk add --no-cache --virtual .build-deps curl \
@@ -16,7 +16,7 @@ RUN \
 
 COPY supervisord.conf /etc/supervisord.conf
 
-ENV KCP_PORT=9443 KCP_MODE=fast MTU=1400 SNDWND=1024 RCVWND=1024
+ENV KCP_PORT=9443 KCP_MODE=fast MTU=1400 SNDWND=1024 RCVWND=1024 DATASHARD=10 PARITYSHARD=0
 
 EXPOSE $KCP_PORT/udp
 
