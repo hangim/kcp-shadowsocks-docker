@@ -30,6 +30,10 @@ or running as a service
 
     KCP_PORT    9443
 
+    KCP_KEY     123456
+
+    KCP_CRYPT   none
+
     KCP_MODE    fast
 
     MTU         1400
