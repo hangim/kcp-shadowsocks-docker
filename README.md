@@ -16,7 +16,7 @@ or running as a service
 
 ### KCP Parameters for client
 
-    --crypt none --mode fast --mtu 1400 --sndwnd 1024 --rcvwnd 1024 --parityshard 0 --nocomp
+    --crypt none --mode fast --mtu 1400 --sndwnd 128 --rcvwnd 512--parityshard 0 --nocomp
 
 ### Default configuration in environment variables
 
@@ -30,13 +30,17 @@ or running as a service
 
     KCP_PORT    9443
 
+    KCP_KEY     123456
+
+    KCP_CRYPT   none
+
     KCP_MODE    fast
 
     MTU         1400
 
-    SNDWND      1024
+    SNDWND      512
 
-    RCVWND      1024
+    RCVWND      128
 
     DATASHARD   10
 
