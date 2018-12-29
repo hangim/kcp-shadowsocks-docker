@@ -2,7 +2,7 @@
 
 FROM imhang/shadowsocks-docker
 
-ENV KCP_VER 20181228
+ENV KCP_VER 20181229
 
 RUN \
     apk add --no-cache --virtual .build-deps curl \
